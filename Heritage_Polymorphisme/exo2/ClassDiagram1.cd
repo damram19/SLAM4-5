@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="exo2.Modèle">
+    <Position X="2.25" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAECAAAIAQBEAAAAAAAACAAAAEAAAA=</HashCode>
+      <FileName>Modèle.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="optionsModèle" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="exo2.Option">
+    <Position X="6.5" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAMAAAACAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Option.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="exo2.Vehicule">
+    <Position X="9.75" Y="0.5" Width="2.75" />
+    <AssociationLine Name="optionsBase" Type="exo2.Option" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.438" Y="3.276" />
+        <Point X="11.438" Y="5.5" />
+        <Point X="9" Y="5.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAECAAAAAQBAAAAIAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Vehicule.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="optionsBase" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="exo2.Voiture">
+    <Position X="5" Y="0.75" Width="3.5" />
+    <AssociationLine Name="possède" Type="exo2.Modèle" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="1.062" />
+        <Point X="3.375" Y="1.062" />
+        <Point X="3.375" Y="2.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAEAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Voiture.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="possède" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

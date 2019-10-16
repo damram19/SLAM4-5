@@ -1,0 +1,21 @@
+@startuml Diagramme de Séquence 
+autoactivate on
+user ->Fred_Client: setAtTable
+return 
+Fred_Client -> Bob_Waiter : order food
+return
+Bob_Waiter -> Hank_Cook : order food
+return
+Hank_Cook -> Bob_Waiter : pickup
+return
+Bob_Waiter -> Fred_Client : serve food
+return
+Fred_Client -> Renne_Cashier : pay
+return
+Bob_Waiter -> Fred_Client : serve wine
+return
+
+
+
+
+@enduml

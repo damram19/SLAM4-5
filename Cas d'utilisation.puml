@@ -1,0 +1,22 @@
+@startuml exo1
+client - (servir essence)
+pompiste -|> client
+gérant - (utilise service informatique)
+mécanicien - (entretenir véhicule)
+chefAtelier -down-|> gérant
+chefAtelier -|> mécanicien
+@enduml
+
+@startuml exo2
+AgentDeVoyage - (OrganiserVoyage)
+Client - (RéserverChambreHôtel)
+Client -- (RéserverTaxi)
+Client -- (RéserverBilletTrain)
+AgentDeVoyage -up- (EtablirUneFactureDétaillée)
+@enduml
+
+@startuml exo3
+Client -- (EmprunterUneVidéo)
+(EmprunterUneVidéo) -> (RechercherUneVidéo): "inclure"
+Client - (RestituerUneVidéo)
+@enduml

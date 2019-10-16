@@ -1,0 +1,36 @@
+@startuml Ménage
+class AppareilElectroménager{
+
+}
+
+class appareilCuisiner{
+
+}
+
+class appareilNettoyer{
+
+}
+
+class ramasseMiette{
+
+}
+
+class laveVaisselle{
+
+}
+
+class microOnde{
+
+}
+
+class four{
+
+}
+
+appareilCuisiner-up-|>AppareilElectroménager
+appareilNettoyer-up-|>AppareilElectroménager
+ramasseMiette -up-|>appareilNettoyer
+laveVaisselle-up-|>appareilNettoyer
+microOnde-up-|>appareilCuisiner
+four-up-|>appareilCuisiner
+@enduml
